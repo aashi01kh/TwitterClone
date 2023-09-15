@@ -1,0 +1,60 @@
+/* .left-sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); 
+} */
+/* Additional styling for the icons, links, or any other elements */
+
+
+/* For screens less than 950px wide */
+
+
+
+
+/* For screens less than 950px wide */
+@media (max-width: 950px) {
+  .left-sidebar {
+    position: fixed;
+    bottom: 0; /* Position it at the bottom of the screen */
+    left: 0;
+    width: 100%; /* Cover the entire width */
+    height: 20%; /* Fixed height of 30px */
+    background-color: #ffffff;
+    overflow-x: auto; /* Enable horizontal scrolling if content exceeds width */
+    padding: 16px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Space elements evenly horizontally */
+    align-items: center; /* Center elements vertically */
+  }
+
+  .sidebar-item {
+    flex: 1; /* Each item takes up an equal portion of the available width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 8px; /* Add spacing between items */
+  }
+
+  /* Specific styles for individual items */
+  .sidebar-item:nth-child(1) {
+    background-color: #e2e8f0; /* Home item background color */
+  }
+
+  .sidebar-item:nth-child(2) {
+    background-color: #cbd5e0; /* Explore item background color */
+  }
+
+  /* Add styles for other items as needed */
+
+  /* Other styles for small screens as needed */
+}
